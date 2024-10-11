@@ -6,21 +6,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    android:paddingStart="8dp"
+    android:paddingLeft="8dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="8dp"
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/txtPhone"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#E40000"
-        android:gravity="center"
-        android:text="Chọn Điện Thoại Của Bạn"
-        android:textColor="#FFEB3B"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:layout_height="94dp"
+        android:background="#C5E3E7"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
 
-    <ListView
-        android:id="@+id/lv"
+        <EditText
+            android:id="@+id/edtThem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnThem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thêm" />
+    </LinearLayout>
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:minHeight="100dp"
+        android:soundEffectsEnabled="false"
+        android:splitMotionEvents="false"
+        android:fillViewport="true">
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
 </LinearLayout>
