@@ -24,7 +24,7 @@ import thi.tai64132083.requestapi.model.Employee;
 import thi.tai64132083.requestapi.model.Knowledge;
 
 public class MainActivity extends AppCompatActivity {
-    private static final String BASE_URL2 = "https://catfact.ninja/";
+
     TextView tvFact,tvLenght;
     Button btnCallAPI;
     @Override
@@ -43,36 +43,30 @@ public class MainActivity extends AppCompatActivity {
        btnCallAPI.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
-               Retrofit retrofit = initRetrofit();
-               ApiService apiService = retrofit.create(ApiService.class);
-               Call<Knowledge> call = apiService.getKnowledgee();
-               call.enqueue(new Callback<Knowledge>() {
-                   @Override
-                   public void onResponse(Call<Knowledge> call, Response<Knowledge> response) {
-                       if(response.isSuccessful() && response.body()!=null){
-                           Knowledge knowledge = response.body();
-                           tvFact.setText(knowledge.getFact() );
-                           tvLenght.setText(String.valueOf(knowledge.getLength()) );
-                       } else {
-                           Log.e("API_ERROR", "Không có dữ liệu hoặc phản hồi không thành công");
-                       }
-                   }
-
-                   @Override
-                   public void onFailure(Call<Knowledge> call, Throwable t) {
-                       Log.e("API_ERROR", "Gọi API thất bại: " + t.getMessage());
-                   }
-               });
+              getAPI();
            }
        });
 
     }
 
-    private Retrofit initRetrofit() {
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(BASE_URL2)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-        return retrofit;
+    private void getAPI() {
+        ApiService.apiService.getKnowledgee()
+                .enqueue(new Callback<Knowledge>() {
+                    @Override
+                    public void onResponse(Call<Knowledge> call, Response<Knowledge> response) {
+                        if(response.isSuccessful() && response.body()!=null){
+                            Knowledge knowledge = response.body();
+                            tvFact.setText(knowledge.getFact() );
+                            tvLenght.setText(String.valueOf(knowledge.getLength()) );
+                        } else {
+                            Log.e("API_ERROR", "Không có dữ liệu hoặc phản hồi không thành công");
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<Knowledge> call, Throwable t) {
+                        Log.e("API_ERROR", "Gọi API thất bại: " + t.getMessage());
+                    }
+                });
     }
 }
