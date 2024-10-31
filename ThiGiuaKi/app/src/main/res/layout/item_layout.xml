@@ -1,38 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/recycler_item.xml -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/recycler_item_bg"
+    android:elevation="2dp"
+    android:layout_margin="8dp">
 
     <ImageView
         android:id="@+id/img"
-        android:layout_width="120dp"
-        android:layout_height="106dp"
-        app:srcCompat="@drawable/hinh1"/>
-
-    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="106dp"
-        android:orientation="vertical"
-        android:paddingLeft="10sp">
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/hinh1"
+        android:background="@drawable/image_bg" />
 
-        <TextView
-            android:id="@+id/tv_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Gậy tập tay"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="Gậy tập tay"
+        android:textSize="18sp"
+        android:textColor="#1A237E"
+        android:textStyle="bold"
+        android:gravity="center" />
 
-        <TextView
-            android:id="@+id/tv_gia"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="4sp"
-            android:text="100000"
-            android:textColor="#DC1B1B"
-            android:textSize="16sp"
-            android:textStyle="italic" />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_gia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:text="100,000 đ"
+        android:textColor="#D32F2F"
+        android:textSize="16sp"
+        android:gravity="center" />
 </LinearLayout>

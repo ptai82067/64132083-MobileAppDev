@@ -36,7 +36,7 @@ public class Bai3 extends AppCompatActivity {
         lv = findViewById(R.id.lv);
         btnThem = findViewById(R.id.btnThem);
         edtThem = findViewById(R.id.edtThem);
-        myAdapter = new ArrayAdapter<>(Bai3.this, android.R.layout.simple_list_item_1,list);
+        myAdapter = new ArrayAdapter<>(Bai3.this, R.layout.list_item, R.id.textItem,list);
         lv.setAdapter(myAdapter);
 
         btnThem.setOnClickListener(new View.OnClickListener() {

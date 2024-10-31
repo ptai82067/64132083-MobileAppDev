@@ -20,7 +20,8 @@
         android:background="#00000000"
         android:minHeight="82dp"
         android:theme="?attr/actionBarTheme"
-        app:title="My Profile" />
+        app:title="My Profile"
+        app:titleTextColor="@color/white"/>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -98,7 +99,7 @@
                             android:orientation="horizontal">
 
                             <Button
-                                android:id="@+id/button1"
+                                android:id="@+id/btn_facebook"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
@@ -108,13 +109,13 @@
                                 android:paddingTop="10dp"
                                 android:paddingEnd="20dp"
                                 android:paddingBottom="10dp"
-                                android:text="Githup"
+                                android:text="Facebook"
                                 android:textColor="@color/white"
                                 android:textSize="11sp"
                                 app:backgroundTint="@null" />
 
                             <Button
-                                android:id="@+id/button"
+                                android:id="@+id/btn_githup"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
