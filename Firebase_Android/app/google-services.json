@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "582742165506",
+    "project_id": "android-firebase-2467a",
+    "storage_bucket": "android-firebase-2467a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582742165506:android:a7415291c0ccd8a69abf1b",
+        "android_client_info": {
+          "package_name": "vn.edu.tinhoc.quanlychitieu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4_n5ioBvfVAlIGjq5vSMh9Prut8c0seI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
