@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/h"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_ta_1">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="411dp"
+        android:layout_height="55dp"
+        android:background="#178DEB"
+        android:gravity="center"
+        android:text="Better English - Better Life"
+        android:textColor="#F2EFEF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</FrameLayout>
