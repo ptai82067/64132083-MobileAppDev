@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/cn1"
+        android:title="CN1" />
+    <item
+        android:id="@+id/nav_recy"
+        android:icon="@drawable/baseline_rocket_24"
+
+        android:title="CN2" />
+    <item
+        android:id="@+id/nav_vp2"
+        android:icon="@drawable/baseline_stars_24"
+        android:title="CN3" />
+    <item
+        android:id="@+id/nav_info"
+        android:icon="@drawable/baseline_info_24"
+        android:title="Cn4" />
+</menu>
