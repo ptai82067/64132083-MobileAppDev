@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 } else if (selectedId == R.id.radioOption3) { // Phép nhân
                     kq = String.valueOf(a * b);
                 } else if (selectedId == R.id.radioOption4) { // Phép chia
-                    kq = b != 0 ? String.valueOf((float) a / b) : "Error: Divide by Zero";
+                    kq = String.valueOf((float) a / b);
                 }
 
                 // Hiển thị kết quả
