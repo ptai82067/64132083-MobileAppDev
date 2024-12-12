@@ -1,0 +1,21 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Layer: Background color (Bán trong suốt) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" /> <!-- Màu xanh bán trong suốt -->
+            <corners android:radius="16dp" /> <!-- Bo góc -->
+        </shape>
+    </item>
+
+    <!-- Layer: Border -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" /> <!-- Trong suốt -->
+            <stroke
+                android:width="2dp"
+                android:color="#80FFFFFF" /> <!-- Viền bán trong suốt -->
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+</layer-list>
