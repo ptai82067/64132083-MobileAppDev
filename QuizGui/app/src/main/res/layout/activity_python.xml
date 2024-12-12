@@ -52,7 +52,7 @@
             app:cardCornerRadius="16dp">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/lblQuestion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center|top"
@@ -86,6 +86,17 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnA"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:background="@drawable/option_button"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:backgroundTint="@null" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -109,6 +120,17 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnB"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:background="@drawable/option_button"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:backgroundTint="@null" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -132,6 +154,17 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnC"
+                android:layout_width="254dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:background="@drawable/option_button"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:backgroundTint="@null" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -155,6 +188,17 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnD"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:background="@drawable/option_button"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:backgroundTint="@null" />
         </androidx.cardview.widget.CardView>
 
         <Button
